@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iran War Escalation Monitor</title>
+  <meta name="description" content="Daily geopolitical escalation monitor with market snapshot, key events, watch items, and headline analysis." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="eyebrow">GEOPOLITICAL RISK DASHBOARD</div>
+      <div class="hero-row">
+        <div>
+          <h1>Iran War Escalation Monitor</h1>
+          <p class="subtitle">Daily briefing with regime score, key events, top headlines, watch items, and market impact snapshot.</p>
+        </div>
+        <div class="meta-card">
+          <div class="meta-label">Last refresh</div>
+          <div id="runAt" class="meta-value">Loading…</div>
+          <div id="runLabel" class="meta-sub">Daily auto refresh</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="ticker-wrap">
+      <div class="ticker-label">Headline ticker</div>
+      <div class="ticker">
+        <div id="headlineTicker" class="ticker-track"></div>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <article class="card regime-card">
+        <div class="section-label">Regime</div>
+        <div class="regime-row">
+          <div id="regimePill" class="regime-pill regime-neutral">—</div>
+          <div class="prob-box">
+            <div><span>4wk TACO</span><strong id="taco4">—</strong></div>
+            <div><span>6wk TACO</span><strong id="taco6">—</strong></div>
+          </div>
+        </div>
+        <p id="regimeSummary" class="summary">Loading summary…</p>
+      </article>
+
+      <article class="card">
+        <div class="section-label">Key watchpoints</div>
+        <div id="watchItems" class="watch-list"></div>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <div class="section-label">Indicators</div>
+        <div class="section-note">Eight-factor escalation scoring</div>
+      </div>
+      <div id="indicators" class="indicator-grid"></div>
+    </section>
+
+    <section class="grid two">
+      <article class="card">
+        <div class="section-header">
+          <div class="section-label">Key events</div>
+          <div class="section-note">Latest daily timeline</div>
+        </div>
+        <div id="keyEvents" class="timeline"></div>
+      </article>
+
+      <article class="card">
+        <div class="section-header">
+          <div class="section-label">Top headlines</div>
+          <div class="section-note">Sentiment-scored stories</div>
+        </div>
+        <div id="topHeadlines" class="headline-list"></div>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <div class="section-label">Market snapshot</div>
+        <div class="section-note">Daily refreshed quotes with static fallback</div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Asset</th>
+              <th>Symbol</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Change</th>
+              <th>Bloomberg</th>
+            </tr>
+          </thead>
+          <tbody id="marketRows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>Static, free-hostable version. Daily refresh is handled by GitHub Actions, not Manus runtime.</div>
+      <div id="footerStamp"></div>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
