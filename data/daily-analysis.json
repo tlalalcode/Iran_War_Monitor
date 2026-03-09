@@ -1,1 +1,102 @@
-
+{
+  "runAt": "2026-03-06T14:00:00.000Z",
+  "runLabel": "Run #1 \u2014 Daily Auto Refresh",
+  "regime": "RED",
+  "tacoPct4wk": "30\u201335%",
+  "tacoPct6wk": "50\u201355%",
+  "regimeSummary": "Auto-generated daily briefing placeholder. Connect the free APIs and the scheduled workflow will refresh this file every day.",
+  "indicators": [
+    {
+      "name": "Rhetoric",
+      "score": 8,
+      "direction": "Escalatory",
+      "rationale": "Placeholder until the daily refresh script overwrites this section.",
+      "sources": [
+        "Daily refresh pipeline"
+      ]
+    },
+    {
+      "name": "Operations",
+      "score": 8,
+      "direction": "Escalatory",
+      "rationale": "Placeholder until the daily refresh script overwrites this section.",
+      "sources": [
+        "Daily refresh pipeline"
+      ]
+    },
+    {
+      "name": "Endgame Language",
+      "score": 6,
+      "direction": "Mixed",
+      "rationale": "Placeholder until the daily refresh script overwrites this section.",
+      "sources": [
+        "Daily refresh pipeline"
+      ]
+    },
+    {
+      "name": "Oil Price",
+      "score": 7,
+      "direction": "Escalatory",
+      "rationale": "Placeholder until the daily refresh script overwrites this section.",
+      "sources": [
+        "Daily refresh pipeline"
+      ]
+    },
+    {
+      "name": "Shipping / Hormuz",
+      "score": 9,
+      "direction": "Severely Escalatory",
+      "rationale": "Placeholder until the daily refresh script overwrites this section.",
+      "sources": [
+        "Daily refresh pipeline"
+      ]
+    },
+    {
+      "name": "Jet Fuel / Airlines",
+      "score": 8,
+      "direction": "Escalatory",
+      "rationale": "Placeholder until the daily refresh script overwrites this section.",
+      "sources": [
+        "Daily refresh pipeline"
+      ]
+    },
+    {
+      "name": "Gulf Allies",
+      "score": 7,
+      "direction": "Uncomfortable",
+      "rationale": "Placeholder until the daily refresh script overwrites this section.",
+      "sources": [
+        "Daily refresh pipeline"
+      ]
+    },
+    {
+      "name": "Domestic Politics",
+      "score": 7,
+      "direction": "Pressure Building",
+      "rationale": "Placeholder until the daily refresh script overwrites this section.",
+      "sources": [
+        "Daily refresh pipeline"
+      ]
+    }
+  ],
+  "keyEvents": [
+    {
+      "date": "Daily",
+      "event": "Workflow will populate fresh headlines, sentiment, and summary here.",
+      "type": "green"
+    }
+  ],
+  "watchItems": [
+    {
+      "num": "01",
+      "title": "Free API pipeline",
+      "detail": "Configure Groq, Hugging Face FinBERT, and optional backups in GitHub secrets. The daily workflow writes this file automatically."
+    }
+  ],
+  "headlineTicker": [
+    "DAILY REFRESH PIPELINE READY",
+    "CONNECT FREE API KEYS IN GITHUB SECRETS",
+    "STATIC HOSTING + SCHEDULED ANALYSIS = NO MANUS RECURRING COST"
+  ],
+  "topHeadlines": []
+}
